@@ -2,9 +2,7 @@
 <!-- http://localhost:3000/isolated/exercise/01.html -->
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
-<html>
-    <body></body>
-</html>
+
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
@@ -19,13 +17,18 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
-<script type="module">
-    const root = document.createElement('div');
-    root.setAttribute('id', 'root');
 
-    const helloWorld = document.createElement('div');
-    helloWorld.textContent = "Hello World!";
-    helloWorld.className = 'container';
-    root.appendChild(helloWorld);
-    document.body.appendChild(root);
-</script>
+<html>
+    <body>
+        <script type="module">
+            const root = document.createElement('div');
+            root.setAttribute('id', 'root');
+
+            const helloWorld = document.createElement('div');
+            helloWorld.textContent = "Hello World!";
+            helloWorld.className = 'container';
+            root.appendChild(helloWorld);
+            document.body.appendChild(root);
+        </script>
+    </body>
+</html>
