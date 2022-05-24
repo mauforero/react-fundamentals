@@ -12,8 +12,8 @@
     const helloSpan = React.createElement('span', {children: 'Hello'});
     const worldSpan = React.createElement('span', {children: 'World!'});
 
-    const elementProps = {className: 'container', children: [helloSpan, worldSpan]};
-    const element = React.createElement('div', elementProps);
+    const elementProps = {className: 'container'};
+    const element = React.createElement('div', elementProps, helloSpan, ' ', worldSpan);
     const root = ReactDOM.createRoot(rootElement);
     root.render(element);
   </script>
